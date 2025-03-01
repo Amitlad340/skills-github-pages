@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Appointments and Meetings</title>
+</head>
+<body id="appointments">
+    <header>
+        <nav>
+            <div class="logo-container"> 
+                <img src="/img/myorg-logo.png" alt="MyOrg Logo" class="logo-img">
+                <div class="logo">MyOrg</div>
+            </div>
+            <ul>
+                <li><a href="dashboard.html" class="active">Dashboard</a></li>
+                <li><a href="todo.html">Todo</a></li>
+                <li><a href="appointments.html">Appointments</a></li>
+                <li><a href="planner.html">Planner</a></li>
+                <li><a href="notes.html">Notes</a></li>
+                <li><a href="./about/aboutMe.html">About Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="scroll">
+        <section class="container">
+            <h1>Appointments and Meetings</h1>
+            <p>Schedule your meetings and appointments here.</p>
+            <form id="appointmentForm">
+                <input type="text" id="appointmentTitle" placeholder="Title" required>
+                <input type="date" id="appointmentDate" required>
+                <input type="time" id="appointmentTime" required>
+                <textarea id="appointmentDesc" placeholder="Description"></textarea>
+                <button type="submit">Add Appointment</button>
+            </form>
+            <ul id="appointmentList"></ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 My Organization. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

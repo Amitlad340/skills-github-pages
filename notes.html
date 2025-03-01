@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Notes</title>
+</head>
+<body id="notes">
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="/Img/myorg-logo.png" alt="MyOrg Logo" class="logo-img">
+                <div class="logo">MyOrg</div>
+            </div>
+            <ul>
+                <li><a href="dashboard.html" class="active">Dashboard</a></li>
+                <li><a href="todo.html">Todo</a></li>
+                <li><a href="appointments.html">Appointments</a></li>
+                <li><a href="planner.html">Planner</a></li>
+                <li><a href="notes.html">Notes</a></li>
+                <li><a href="./about/aboutMe.html">About Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="scroll">
+        <section class="container">
+            <h1>Notes</h1>
+            <p>Create and manage your notes here.</p>
+            <form id="noteForm">
+                <input type="text" id="noteTitle" placeholder="Title" required>
+                <textarea id="noteContent" placeholder="Content"></textarea>
+                <button type="submit">Add Note</button>
+            </form>
+            <div id="noteList"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 My Organization. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
